@@ -1,0 +1,31 @@
+{
+  "name": "oidc-broker-training",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Training project: an ALB-relayed identity broker pattern, reissuing an ALB's authenticate-oidc assertion as standards-compliant OIDC.",
+  "type": "module",
+  "scripts": {
+    "broker": "tsx watch src/index.ts",
+    "fake-alb": "tsx watch dev/fake-alb/index.ts",
+    "demo-rp": "tsx dev/demo-rp/index.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@koa/router": "^12.0.2",
+    "jose": "^5.9.6",
+    "koa": "^2.15.3",
+    "koa-mount": "^4.0.0",
+    "oidc-provider": "^8.5.2"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.15.0",
+    "@types/koa__router": "^12.0.4",
+    "@types/koa-mount": "^4.0.5",
+    "@types/node": "^22.9.0",
+    "@types/oidc-provider": "^9.12.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.4"
+  }
+}
