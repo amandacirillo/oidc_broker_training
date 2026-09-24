@@ -1,5 +1,7 @@
 # OIDC Broker Training
 
+> **Note:** This is a from-scratch recreation of an architectural pattern I built at my employer, not the original production code -- rebuilt with a fabricated/generic domain and no proprietary business logic, credentials, or internal resource identifiers.
+
 A standalone, runnable reimplementation of an "ALB-relayed identity broker" pattern: an
 Application Load Balancer authenticates a user against your org's identity provider (Entra,
 Okta, Google...) via its built-in `authenticate-oidc` listener action, and a small service behind
